@@ -2,9 +2,9 @@ import express from 'express';
 const router = express.Router();
 import controlador from '../Controller/principalController.js'
 
-router.get('/', controlador.mostrar);
-router.post('/', controlador.crear);
-router.put('/', controlador.actualizar);
-router.delete('/:numerocedula', controlador.borrar);
+router.get('/', controlador.getUsers);
+router.post('/', controlador.create);
+router.put('/', controlador.update);
+router.delete('/:numerocedula', controlador.delete);
 
 export default router;
